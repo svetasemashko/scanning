@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+
+}
+.wrapper {
+    background-color: rgba(14,14,14,0.92);
+    max-width: 768px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.header {
+    background-color: crimson;
+}
+.logo {
+    background-color: rgba(60,63,65,0.92);
+}
+.logo-name {
+    background-color: darkslategrey;
+}
+
+.corner {
+    background: rgba(114,120,124,0.92);
+}
+.wrapper-inner {
+
+}
+.sidebar, .content {
+    float: left;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 30%;
+    background: rgba(12,75,62,0.92);
+    padding: 10px;
+}
+.content {
+    width: 70%;
+    background: lightcoral;
+    padding: 10px;
+}
+#footer {
+    background: rgba(4,4,4,0.92);
+    /*TODO сдвинуть футер вниз*/
+}
+.copyright {
+    background: cornflowerblue;
+}
