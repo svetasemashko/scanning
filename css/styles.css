@@ -3,45 +3,107 @@ body {
 
 }
 .wrapper {
-    background-color: rgba(14,14,14,0.92);
+    background-color: rgba(155, 164, 26, 0.92);
     max-width: 768px;
     box-sizing: border-box;
     margin: 0 auto;
+    border: 10px inset rgba(43,43,43,0.92);
+    border-radius: 10px;
+
 }
 .header {
     background-color: crimson;
+    height: 100px;
+    position: relative;
+
+
 }
 .logo {
-    background-color: rgba(60,63,65,0.92);
+    /*height: 66px;*/
+    margin: 10px;
+    position: absolute;
 }
 .logo-name {
-    background-color: darkslategrey;
+    font-size: 24px;
+    width: 100px;
+    left: 90px;
+    position: absolute;
 }
 
 .corner {
     background: rgba(114,120,124,0.92);
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.version-name {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.button-exit {
+
 }
 .wrapper-inner {
-
+    position: relative;
+    min-height: 500px;
 }
 .sidebar, .content {
     float: left;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
 }
 .sidebar {
     width: 30%;
     background: rgba(12,75,62,0.92);
-    padding: 10px;
+    left: 0;
+
 }
 .content {
     width: 70%;
     background: lightcoral;
-    padding: 10px;
+    right: 0;
+}
+.select-copies {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+table {
+    width: 80%;
+    background: darkslategrey;
+    vertical-align: top;
+    position: absolute;
+    top: 15%;
+    margin: 10%;
+}
+.select-name {
+    color: mintcream;
+    font-size: 20px;
+}
+/*.list-pic-color {*/
+    /*display: list-item;*/
+    /*list-style-image: url("https://ambar.net.ua/image/data/logo/kyivstar.png");*/
+/*}*/
+
+.button-send {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
 }
 #footer {
     background: rgba(4,4,4,0.92);
-    /*TODO сдвинуть футер вниз*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .copyright {
-    background: cornflowerblue;
+    font-size: 11px;
+    color: dimgrey;
+    right: 20px;
+    margin: 20px;
 }
