@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Scanning</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!--    type="text/css писать не нужно"-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
 <div>
@@ -23,15 +29,24 @@
             <div class="corner">
                 <button class="button-exit">Quit</button>
                 <div class="version-name">Version 1.2</div>
+                <div>
+
+                </div>
             </div>
 
         </div>
 
         <div class="wrapper-inner">
             <div class="sidebar">
-                <div class="users-name">Users</div>
-                <div class="users-list">
-                    Sveta
+               <div class="users-list">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mark</a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Irene</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -46,26 +61,33 @@
 
                 </div>
 
-                <table class="table">
+                <table class="my-table">
                     <tr>
                         <td>
                             <p class="select-name">Choose color</p>
-                            <select class="select">
-<!--                                <option disabled>Number of copies</option>-->
+                            <select class="my-select" name="color">
                                 <option value="0">Black</option>
                                 <option value="1">White</option>
                             </select>
                         </td>
                         <td>
-                            2
+                            <p class="select-name">Choose color</p>
+                            <select class="my-select" name="color">
+                                <option value="0">Black</option>
+                                <option value="1">White</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            3
+                            <p class="select-name">Choose color</p>
+                            <select class="my-select" name="color">
+                                <option value="0">Black</option>
+                                <option value="1">White</option>
+                            </select>
                         </td>
                         <td>
-                            <input type="search" placeholder="filter...">
+                            <input type="text" name="filter" placeholder="filter...">
                         </td>
                     </tr>
                 </table>

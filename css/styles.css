@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
     margin: 0;
-
 }
+
 .wrapper {
     background-color: rgba(155, 164, 26, 0.92);
     max-width: 768px;
@@ -9,20 +11,21 @@ body {
     margin: 0 auto;
     border: 10px inset rgba(43,43,43,0.92);
     border-radius: 10px;
+    font-family: "Montserrat";
 
 }
+
 .header {
     background-color: crimson;
     height: 100px;
     position: relative;
-
-
 }
+
 .logo {
-    /*height: 66px;*/
     margin: 10px;
     position: absolute;
 }
+
 .logo-name {
     font-size: 24px;
     width: 100px;
@@ -38,18 +41,21 @@ body {
     top: 0;
     position: absolute;
 }
+
 .version-name {
     padding: 10px;
     position: absolute;
     bottom: 0;
 }
-.button-exit {
 
+.button-exit {
 }
+
 .wrapper-inner {
     position: relative;
     min-height: 500px;
 }
+
 .sidebar, .content {
     float: left;
     box-sizing: border-box;
@@ -57,22 +63,25 @@ body {
     bottom: 0;
     height: 100%;
 }
+
 .sidebar {
     width: 30%;
     background: rgba(12,75,62,0.92);
     left: 0;
-
 }
+
 .content {
     width: 70%;
     background: lightcoral;
     right: 0;
 }
+
 .select-copies {
     position: absolute;
     right: 10%;
     top: 10%;
 }
+
 table {
     width: 80%;
     background: darkslategrey;
@@ -81,26 +90,40 @@ table {
     top: 15%;
     margin: 10%;
 }
+
 .select-name {
     color: mintcream;
     font-size: 20px;
 }
-/*.list-pic-color {*/
-    /*display: list-item;*/
-    /*list-style-image: url("https://ambar.net.ua/image/data/logo/kyivstar.png");*/
-/*}*/
+
+.users-list {
+    position: relative;
+}
+
+.tab-panel {
+    display: block;
+    min-height: 40px;
+    width: 80%;
+    background-color: cornflowerblue;
+}
+
+.nav-link {
+    width: 120px;
+}
 
 .button-send {
     position: absolute;
     bottom: 30px;
     right: 60px;
 }
+
 #footer {
     background: rgba(4,4,4,0.92);
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 .copyright {
     font-size: 11px;
     color: dimgrey;
