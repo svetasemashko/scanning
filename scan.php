@@ -77,21 +77,53 @@
                     </select>
 
                 </div>
+
+
+
+
+                <?php
+
+                $colors = array(
+                    array('color1'=>'Black','color2'=>'White'),
+                    array('color1'=>'Red','color2'=>'Blue'),
+                    array('color1'=>'Pink','color2'=>'Orange')
+                );
+
+                $str = json_encode($colors);
+
+                file_put_contents('param.json', $str);
+
+                $array = json_decode($str,true);
+
+                ?>
+
+
+
+
+
                 <form action="index.php" method="post">
                 <table class="my-table">
                     <tr>
                         <td>
                             <p class="select-name">Choose color</p>
                             <select class="my-select" name="color1">
-                                <option value="Black">Black</option>
-                                <option value="White">White</option>
+                                <option value="Black">
+                                    <?php echo $array[0]["color1"];?>
+                                </option>
+                                <option value="White">
+                                    <?php echo $array[0]["color2"];?>
+                                </option>
                             </select>
                         </td>
                         <td>
                             <p class="select-name">Choose color</p>
                             <select class="my-select" name="color2">
-                                <option value="Red">Red</option>
-                                <option value="Blue">Blue</option>
+                                <option value="Red">
+                                    <?php echo $array[1]["color1"];?>
+                                </option>
+                                <option value="Blue">
+                                    <?php echo $array[1]["color2"];?>
+                                </option>
                             </select>
                         </td>
                     </tr>
@@ -99,8 +131,12 @@
                         <td>
                             <p class="select-name">Choose color</p>
                             <select class="my-select" name="color3">
-                                <option value="Pink">Pink</option>
-                                <option value="Orange">Orange</option>
+                                <option value="Pink">
+                                    <?php echo $array[2]["color1"];?>
+                                </option>
+                                <option value="Orange">
+                                    <?php echo $array[2]["color2"];?>
+                                </option>
                             </select>
                         </td>
                         <td>
