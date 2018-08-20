@@ -42,8 +42,21 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mark</a>
-                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Irene</a>
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                                   aria-controls="v-pills-home" aria-selected="true">
+                                    <?php
+                                    $file = file_get_contents("users.json");
+                                    $data = json_decode($file, true);
+                                    $members = implode(' ', $data);
+                                    $members1 = explode(' ', $members);
+                                    echo $members1[0];
+                                    ?>
+                                </a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    <?php
+                                    echo $members1[1];
+                                    ?>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -122,3 +135,4 @@
 
 </body>
 </html>
+
