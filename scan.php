@@ -42,6 +42,7 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
                                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                                    aria-controls="v-pills-home" aria-selected="true">
                                     <?php
@@ -52,11 +53,14 @@
                                     echo $members1[0];
                                     ?>
                                 </a>
+
+
                                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                                     <?php
                                     echo $members1[1];
                                     ?>
                                 </a>
+
                             </div>
                         </div>
                     </div>
@@ -73,30 +77,30 @@
                     </select>
 
                 </div>
-
+                <form action="index.php" method="post">
                 <table class="my-table">
                     <tr>
                         <td>
                             <p class="select-name">Choose color</p>
-                            <select class="my-select" name="color">
-                                <option value="0">Black</option>
-                                <option value="1">White</option>
+                            <select class="my-select" name="color1">
+                                <option value="Black">Black</option>
+                                <option value="White">White</option>
                             </select>
                         </td>
                         <td>
                             <p class="select-name">Choose color</p>
-                            <select class="my-select" name="color">
-                                <option value="0">Black</option>
-                                <option value="1">White</option>
+                            <select class="my-select" name="color2">
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="select-name">Choose color</p>
-                            <select class="my-select" name="color">
-                                <option value="0">Black</option>
-                                <option value="1">White</option>
+                            <select class="my-select" name="color3">
+                                <option value="Pink">Pink</option>
+                                <option value="Orange">Orange</option>
                             </select>
                         </td>
                         <td>
@@ -105,7 +109,7 @@
                     </tr>
                 </table>
 
-                <form action="index.html" method="post">
+
                     <div class="button-send">
                         <button type="submit" value="send" name="Send">
                             <img src="https://sendprovision.co.uk/wp-content/uploads/sites/74/2017/08/SEND-2017-Logo-RGB.png" width="55px">
